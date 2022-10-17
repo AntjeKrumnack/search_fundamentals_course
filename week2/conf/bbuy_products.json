@@ -265,13 +265,12 @@
             "type": "text",
             "analyzer": "trigram"
           },
-          "text":{
+          "text": {
             "type":"text",
             "analyzer": "english"
           }
         }
       },
-
       "canonical": {
         "type": "text"
       },

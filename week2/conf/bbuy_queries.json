@@ -65,7 +65,6 @@
           "analyzer": "english"
         }
       },
-
       "canonical": {
         "type": "text"
       },
