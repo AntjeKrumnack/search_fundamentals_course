@@ -55,7 +55,7 @@
         }
       },
       "suggest":{
-        "type": "complition",
+        "type": "completion",
         "fields":{
           "trigrams": "text",
           "analyzer": "trigram"
