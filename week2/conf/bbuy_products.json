@@ -26,10 +26,16 @@
       },
       "filter": {
         "smarter_hyphens_filter": {
-          "TODO": "DEFINE ME"
+          "type": "word_delimiter_graph",
+          "catenate_all": true,
+          "catenate_words": true
+##         "TODO": "DEFINE ME"
         },
         "shingle": {
-            "TODO": "DEFINE ME"
+          "type": "shingle",
+          "min_shingle_size": 2,
+          "max_shingle_size": 3
+##    "TODO": "DEFINE ME"
           }
       }
     }
@@ -247,12 +253,29 @@
           "keyword": {
             "type": "keyword",
             "ignore_above": 2048
+          },
+          "hyphens":{
+            "type": "text",
+            "analyzer": "smarter_hyphens"
           }
         }
       },
-      "TODO: REPLACE WITH SUGGEST": {
-        "REPLACE": "REPLACE"
-      },
+      "suggest":{
+        "type": "completion",
+        "fields":{
+          "trigrams": {
+            "type": "text",
+            "analyzer": "trigrams"
+          },
+          "text":{
+            "type":"text",
+            "analyzer": "english"
+          }
+        }
+      }
+#      "TODO: REPLACE WITH SUGGEST": {
+#        "REPLACE": "REPLACE"
+#      },
       "canonical": {
         "type": "text"
       },
