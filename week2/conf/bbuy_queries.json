@@ -56,11 +56,11 @@
       },
       "suggest":{
         "type": "completion",
-        "fields":{
+        "fields": {
           "trigrams": "text",
           "analyzer": "trigram"
         },
-        "text":{
+        "text": {
           "type":"text",
           "analyzer": "english"
         }

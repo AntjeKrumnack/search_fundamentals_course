@@ -258,15 +258,15 @@
           }
         }
       },
-      "suggest":{
+      "suggest": {
         "type": "completion",
-        "fields":{
+        "fields": {
           "trigrams": {
             "type": "text",
             "analyzer": "trigram"
           },
           "text": {
-            "type":"text",
+            "type": "text",
             "analyzer": "english"
           }
         }
